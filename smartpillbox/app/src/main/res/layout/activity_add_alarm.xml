@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etMedicineName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="약 이름" />
+
+    <RadioGroup
+        android:id="@+id/rgSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbDaily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="매일" />
+
+        <RadioButton
+            android:id="@+id/rbWeekday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주중" />
+
+        <RadioButton
+            android:id="@+id/rbWeekend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="주말" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/tvSun"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="일"
+            android:textAlignment="center"
+            android:background="@drawable/circle_background"
+            android:padding="8dp"
+            android:layout_margin="4dp"/> <!-- 간격 추가 -->
+
+
+        <TextView
+            android:id="@+id/tvMon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="월"
+            android:textAlignment="center"
+            android:background="@drawable/circle_background"
+            android:padding="8dp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:id="@+id/tvTue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="화"
+            android:textAlignment="center"
+            android:background="@drawable/circle_background"
+            android:padding="8dp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:id="@+id/tvWed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="수"
+            android:textAlignment="center"
+            android:background="@drawable/circle_background"
+            android:padding="8dp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:id="@+id/tvThu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="목"
+            android:textAlignment="center"
+            android:background="@drawable/circle_background"
+            android:padding="8dp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:id="@+id/tvFri"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="금"
+            android:textAlignment="center"
+            android:background="@drawable/circle_background"
+            android:padding="8dp"
+            android:layout_margin="4dp"/>
+
+        <TextView
+            android:id="@+id/tvSat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="토"
+            android:textAlignment="center"
+            android:background="@drawable/circle_background"
+            android:padding="8dp"
+            android:layout_margin="4dp"/>
+
+
+    </LinearLayout>
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="저장" />
+
+</LinearLayout>
